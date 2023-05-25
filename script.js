@@ -44,13 +44,12 @@ toggleButton.addEventListener('click', () => {
   bgBlack.classList.add('black')
 });
 
-//============== HEADER SCROLL BG COLOR ====================//
+//============== ADD BAR COLOR BY ====================//
 const navEL = document.querySelector('.nav')[0];
 
 window.addEventListener('scroll', () => {
 
   const sideBar = $('.left_nav').css('opacity')
-  console.log(sideBar)
   if (window.scrollY >= 56) {
     bgBlack.style.backgroundColor = "black"
   } else {
@@ -68,6 +67,7 @@ document.onclick = function (e) {
   if (!toggleButton.contains(e.target) && !genres.contains(e.target)) {
     navbarLinks.classList.remove('active')
     navbarLinks2.classList.remove('active')
+    menu.classList.remove("openmenu");
     if (window.scrollY < 56) {
       bgBlack.style.backgroundColor = "transparent"
     } else {
@@ -100,6 +100,17 @@ window.addEventListener('scroll', () => {
   }
 });
 
+//============= SHOWING UP ARROW MOBILE =============//
+/*
+const Afir = document.getElementById('firA')
+const Aty = document.getElementById('tyA')
+const Ac1 = document.getElementById('c1A')
+const Ac2 = document.getElementById('c2A')
+const Ac3 = document.getElementById('c3A')
+const Ac4 = document.getElementById('c4A')
+const Ac5 = document.getElementById('c5A')
+const Ac7 = document.getElementById('c7A')
+*/
 
 //============================ SLIDER's ===============================//
 //========== FIRST =============//
@@ -108,7 +119,7 @@ var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   centeredSlides: true,
   autoplay: {
-    delay: 55000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -175,6 +186,10 @@ var swiper = new Swiper(".mySwiper2", {
       slidesPerView: 7.3,
       slidesPerGroup: 7,
     },
+    1920: {
+      slidesPerView: 9.7,
+      slidesPerGroup: 4,
+    },
     2560: {
       slidesPerView: 12,
       slidesPerGroup: 7,
@@ -196,11 +211,11 @@ var swiper = new Swiper(".mySwiper3", {
       slidesPerView: 2.5,
     },
     375: {
-      slidesPerView: 3.5,
+      slidesPerView: 3,
       slidesPerGroup: 2,
     },
     425: {
-      slidesPerView: 4.5,
+      slidesPerView: 3.2,
       slidesPerGroup: 2,
     },
     768: {
@@ -208,7 +223,12 @@ var swiper = new Swiper(".mySwiper3", {
       slidesPerGroup: 2,
     },
     1024: {
-      slidesPerView: 7.5,
+      slidesPerView: 8,
+      slidesPerGroup: 3,
+
+    },
+    1124: {
+      slidesPerView: 8.9,
       slidesPerGroup: 3,
 
     },
@@ -217,7 +237,11 @@ var swiper = new Swiper(".mySwiper3", {
       slidesPerGroup: 5,
     },
     1440: {
-      slidesPerView: 9.5,
+      slidesPerView: 10,
+      slidesPerGroup: 5,
+    },
+    1500: {
+      slidesPerView: 12,
       slidesPerGroup: 5,
     },
   },
@@ -286,7 +310,27 @@ var swiper = new Swiper(".mySwiper4", {
       slidesPerGroup: 4,
     },
     1440: {
-      slidesPerView: 4.6,
+      slidesPerView: 4.7,
+      slidesPerGroup: 4,
+    },
+    1500: {
+      slidesPerView: 5,
+      slidesPerGroup: 4,
+    },
+    1600: {
+      slidesPerView: 5.3,
+      slidesPerGroup: 4,
+    },
+    1700: {
+      slidesPerView: 5.7,
+      slidesPerGroup: 4,
+    },
+    1700: {
+      slidesPerView: 6,
+      slidesPerGroup: 4,
+    },
+    1920: {
+      slidesPerView: 6.4,
       slidesPerGroup: 4,
     },
     2560: {
@@ -352,6 +396,10 @@ var swiper = new Swiper(".mySwiper5", {
     1440: {
       slidesPerView: 7.3,
       slidesPerGroup: 7,
+    },
+    1920: {
+      slidesPerView: 9.7,
+      slidesPerGroup: 4,
     },
     2560: {
       slidesPerView: 12,
@@ -424,6 +472,10 @@ var swiper = new Swiper(".mySwiper6", {
       slidesPerView: 5.4,
       slidesPerGroup: 5,
     },
+    1920: {
+      slidesPerView: 7.2,
+      slidesPerGroup: 4,
+    },
     2560: {
       slidesPerView: 9,
       slidesPerGroup: 7,
@@ -487,6 +539,10 @@ var swiper = new Swiper(".mySwiper7", {
     1440: {
       slidesPerView: 7.3,
       slidesPerGroup: 7,
+    },
+    1920: {
+      slidesPerView: 9.7,
+      slidesPerGroup: 4,
     },
     2560: {
       slidesPerView: 12,
@@ -552,6 +608,10 @@ var swiper = new Swiper(".mySwiper9", {
     1440: {
       slidesPerView: 7.3,
       slidesPerGroup: 7,
+    },
+    1920: {
+      slidesPerView: 9.7,
+      slidesPerGroup: 4,
     },
     2560: {
       slidesPerView: 12,
