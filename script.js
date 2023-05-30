@@ -710,3 +710,14 @@ function changeOUT5() {
     aboutImgL.src = 'img/Icon/lupa.png'
   }
 }
+
+// ======== ALERT ======== //
+
+Swal.fire({
+  title: 'Atenção!',
+  text: "Este site NÃO é original. Todos os direitos estão reservados para a origem: https://play.hbomax.com/page/urn:hbo:page:home",
+  icon: 'warning',
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Ok'
+})
