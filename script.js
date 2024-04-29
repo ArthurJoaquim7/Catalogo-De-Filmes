@@ -76,8 +76,6 @@ document.onclick = function (e) {
   }
 }
 
-//==============================================================================
-
 // ========== ACTIVE TYPE  ========== // 
 const typeAct = document.querySelectorAll('.typex');
 
